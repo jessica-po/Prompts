@@ -1,0 +1,5 @@
+vulnerable_code: """{vulnerable_code}"""
+cwe_ids: {cwe_ids}
+
+Task:
+Produce a short patch plan to approach this problem. Focus on steps to identify the root cause, mitigate the vulnerability, and verify the fix. Use numbered steps. Do not implement the patch

@@ -1,0 +1,6 @@
+Take the following vulnerable code snippet and output patched Python-code only. If your fix requires external config or permissions, include those requirements as inline comments inside the code only. Do not output anything else.
+
+Vulnerable Code:
+{vulnerable_code}
+
+Output:

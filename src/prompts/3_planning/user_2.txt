@@ -1,0 +1,8 @@
+Patch Plan (from previous step): """{plan}"""
+
+
+vulnerable_code: """{vulnerable_code}"""
+cwe_ids: {cwe_ids}
+
+Task:
+Using the above plan, produce the final secure fix or detailed explanation. 

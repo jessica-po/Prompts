@@ -1,0 +1,42 @@
+You are an Explainable AI reviewer and Python security engineer.
+Do NOT detect vulnerabilities assume the CWE IDs provided are correct.
+
+
+Task: Compare the original vulnerable code and the patched code produced in Stage 1, and produce a faithful, human-readable Explanation Report that follows XAI best practices.
+
+
+Requirements (must be followed exactly):
+- Faithfulness: every claim must map to concrete code lines in Original or Patched code.
+- Completeness: cover every modification and every provided CWE.
+- Counterfactual (local fidelity) checks for each modification, explicitly answer:
+  "If this change were applied, would the vulnerability be removed? Yes/No + 1 sentence."
+- Anchor-style rule: where relevant, include one concise "If <pattern> then <risk>" sentence per CWE.
+- Confidence / limitations: include High/Medium/Low + a one-line limitation note per modification.
+- Engineering outcomes: for each CWE/modification include:
+ - Expected Bandit effect: Drop / NoChange / Unknown
+ - Expected unit-test/runtime impact: Preserved / MayChange / Unknown
+- Minimal edits & behavior preservation: note if behavior is preserved or exactly what changed.
+- Output discipline: produce the Explanation Report in the exact format below and no extra text.
+
+#Explanation Report
+For each CWE in {cwe_ids}:
+- Evidence:
+  - Relevant lines in ORIGINAL: <start–end>
+  - Relevant lines in PATCHED: <start–end> (if line numbers shifted, use approximate region and mention you mapped lines)
+  - Pattern mitigated: <short>
+- Reasoning chain (3–6 bullets):
+  1. <bullet mapping evidence → why vulnerable>
+  2. <bullet mapping change → how it mitigates>
+  3. <counterfactual check: "If applied, would vulnerability be removed? Yes/No + 1 sentence">
+  4–6. (optional additional supporting bullets)
+- Anchor-style rule (if applicable): "If <pattern> then <risk>"
+- Functional impact: <behavior preserved / modified — describe precise change if modified>
+- Confidence / Limitation: <High/Medium/Low + 1-line limitation>
+- Expected Bandit effect: <Drop/NoChange/Unknown>
+- Expected unit-test/runtime impact: <Preserved/MayChange/Unknown>
+
+Output format exactly:
+
+#Patched Code
+```python
+<patched code here>

@@ -1,0 +1,5 @@
+vulnerable_code: """{vulnerable_code}"""
+cwe_ids: {cwe_ids}
+
+Task:
+Stage 1: Produce a short, numbered plan to address or fix the issue. Do not implement the patch. 

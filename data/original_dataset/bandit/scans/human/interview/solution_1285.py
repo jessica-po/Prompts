@@ -1,0 +1,1 @@
+(lambda R:(lambda N:(lambda n:any((lambda z,r:all((lambda p:all(p==k for k in n[j:j+i]))(n[j])for j in range(0,N,i))and all(all((lambda q:q==z or q==r)(j[k:k+i])for k in range(0,N,i))for j in n)and[print(i)])('0'*i,'1'*i)for i in range(N,0,-1)if N%i==0))([bin(int(R(),16))[2:].zfill(N)for i in range(N)]))(int(R())))(__import__('sys').stdin.readline)

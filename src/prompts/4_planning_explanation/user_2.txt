@@ -1,0 +1,8 @@
+Patch Plan:  """{plan}"""
+
+vulnerable_code: """{vulnerable_code}"""
+
+cwe_ids: {cwe_ids}
+
+Task:
+Provide the final secure fix or analysis, with a clear explanation according to the guidelines in the system prompt.

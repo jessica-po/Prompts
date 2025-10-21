@@ -1,0 +1,154 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.7">
+  <diagram name="Page-1" id="2hEwT0hEoCu0XenIvo3H">
+    <mxGraphModel dx="1555" dy="1523" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-1" value="cwe_ids" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-3" value="vulnerable_code" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="390" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-4" value="&lt;b&gt;1&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="150" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-5" value="Single Shot (Baseline, No XAI) &lt;br&gt;(1) Patch" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="155" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-6" value="&lt;b&gt;2&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="880" y="155" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-7" value="XAI (Ante-Hoc) &lt;br&gt;(1) Patch + Explanation" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="930" y="160" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-8" value="&lt;b&gt;3&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1760" y="155" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-9" value="Planning (Ante-Hoc)&lt;br&gt;(1) Plan + (2) Patch" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1810" y="160" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-10" value="&lt;b&gt;4&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="2600" y="155" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-11" value="Planning Explanation (Ante-Hoc)&lt;div&gt;(1) Plan + (2) Patch + Explanation&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2650" y="160" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-12" value="&lt;b&gt;5&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="3440" y="155" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-13" value="Prompt Then Explain (Post-Hoc)&lt;br&gt;(1) Patch + (2) Explanation" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="3490" y="160" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-14" value="You are a Python security expert. You will receive vulnerable Python code. Produce a minimal, correct, and safe patched Python file that fixes the vulnerability and preserves original behavior where reasonable. Output only the patched Python code bytes — no preamble, no explanation, no filenames, no backticks. If the request would enable exploitation or is disallowed, output a single-line Python comment beginning with # REFUSE: and a brief reason." style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="330" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-15" value="System Prompt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-16" value="User Prompt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="190" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-17" value="&lt;div&gt;Take the following vulnerable code snippet and output patched Python-code only. If your fix requires external config or permissions, include those requirements as inline comments inside the code only. Do not output anything else.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Vulnerable Code:&lt;/div&gt;&lt;div&gt;{vulnerable_code}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Output:&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="390" y="200" width="330" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-18" value="&lt;div&gt;You are a Python security engineer focused on explainable patching.&amp;nbsp;&lt;/div&gt;&lt;div&gt;Do NOT detect vulnerabilities — assume the CWE IDs provided are correct.&amp;nbsp;&lt;/div&gt;&lt;div&gt;Focus only on evidence, reasoning, and producing a safe patch that preserves the original behavior wherever reasonable.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="880" y="205" width="330" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-19" value="&lt;div&gt;Here is the vulnerable code and the CWE IDs:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;vulnerable_code: &quot;&quot;&quot;{vulnerable_code}&quot;&quot;&quot;&lt;/div&gt;&lt;div&gt;cwe_ids: {cwe_ids}&amp;nbsp; &amp;nbsp;# e.g., CWE-78 CWE-94&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Produce output in exactly the following format (nothing else):&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;### CWE Blocks&lt;/div&gt;&lt;div&gt;For each CWE in {cwe_ids}, provide:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Evidence:&lt;/div&gt;&lt;div&gt;- [E1] Relevant code lines: &amp;lt;start–end&amp;gt;&lt;/div&gt;&lt;div&gt;- [E2] Language pattern: &amp;lt;e.g., use of eval / subprocess&amp;gt;&lt;/div&gt;&lt;div&gt;- [E3] Violated principle: &amp;lt;e.g., lack of input validation&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Explanation:&lt;/div&gt;&lt;div&gt;- Step-by-step reasoning linking evidence to how the vulnerability is mitigated (3–6 short bullets).&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Patch:&lt;/div&gt;&lt;div&gt;```python&lt;/div&gt;&lt;div&gt;# Full runnable patched Python file&lt;/div&gt;&lt;div&gt;&amp;lt;patched code here&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Justification:&lt;/div&gt;&lt;div&gt;1–3 sentences connecting each patch to the evidence.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;RULES:&lt;/div&gt;&lt;div&gt;Prioritize interpretability and evidence linkage.&lt;/div&gt;&lt;div&gt;Minimal edits: preserve original behavior wherever reasonable.&lt;/div&gt;&lt;div&gt;If the fix would enable exploitation or violates policy, output exactly: REFUSE: &amp;lt;brief reason&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="205" width="330" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-21" value="vulnerable_code" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-23" value="&lt;div&gt;You are a Python security engineer focused on explainable patching.&lt;/div&gt;&lt;div&gt;Do NOT detect vulnerabilities assume the CWE IDs are correct.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Your task: create a step-by-step PATCH PLAN to fix the vulnerabilities.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Follow XAI best practices:&lt;/div&gt;&lt;div&gt;- Evidence must reference actual code lines.&lt;/div&gt;&lt;div&gt;- Each step should be concise (3–6 steps).&lt;/div&gt;&lt;div&gt;- Include expected behavior impact and minimal edits principle.&lt;/div&gt;&lt;div&gt;- Provide confidence (High/Medium/Low) and limitation notes for each evidence.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Output format exactly:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;# Patch Plan&lt;/div&gt;&lt;div&gt;For each CWE in {cwe_ids}:&lt;/div&gt;&lt;div&gt;- Evidence lines: &amp;lt;start–end&amp;gt;&lt;/div&gt;&lt;div&gt;- Vulnerable pattern: &amp;lt;short&amp;gt;&lt;/div&gt;&lt;div&gt;- Planned fix description: &amp;lt;short&amp;gt;&lt;/div&gt;&lt;div&gt;- Expected behavior impact: &amp;lt;short&amp;gt;&lt;/div&gt;&lt;div&gt;- Confidence / Limitation: &amp;lt;High/Medium/Low, 1-line note&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1760" y="220" width="330" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-24" value="&lt;div&gt;&lt;div&gt;You are a Python security engineer implementing a PATCH PLAN.&lt;/div&gt;&lt;div&gt;Do NOT detect vulnerabilities assume the CWE IDs are correct.&lt;/div&gt;&lt;div&gt;Your task: produce a full runnable patch from the plan.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Rules / XAI best practices:&lt;/div&gt;&lt;div&gt;- Each change must trace to the plan’s Evidence lines.&lt;/div&gt;&lt;div&gt;- Minimal edits; preserve original behavior wherever reasonable.&lt;/div&gt;&lt;div&gt;- Return python code only, no explanation or commentary&lt;/div&gt;&lt;div&gt;just code enclosed in triple backticks&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Output format exactly:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;#Patched Code&lt;/div&gt;&lt;div&gt;```python&lt;/div&gt;&lt;div&gt;&amp;lt;patched code here&amp;gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1760" y="660" width="330" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-25" value="&lt;div&gt;vulnerable_code: &quot;&quot;&quot;{vulnerable_code}&quot;&quot;&quot;&lt;/div&gt;&lt;div&gt;cwe_ids: {cwe_ids}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Task:&lt;/div&gt;&lt;div&gt;Produce a short patch plan to approach this problem. Focus on steps to identify the root cause, mitigate the vulnerability, and verify the fix. Use numbered steps. Do not implement the patch&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="2110" y="220" width="330" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-27" value="cwe_ids" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="2240" y="130" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-28" value="vulnerable_code" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="2110" y="130" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-29" value="&lt;div&gt;&lt;div&gt;Patch Plan (from previous step): &quot;&quot;&quot;{patch_plan_output_from_stage1}&quot;&quot;&quot;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;vulnerable_code: &quot;&quot;&quot;{vulnerable_code}&quot;&quot;&quot;&lt;/div&gt;&lt;div&gt;cwe_ids: {cwe_ids}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Task:&lt;/div&gt;&lt;div&gt;Using the above plan, produce the final secure fix or detailed explanation.&amp;nbsp;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="2110" y="660" width="330" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-30" value="cwe_ids" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="2240" y="560" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-31" value="vulnerable_code" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="2110" y="560" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-32" value="Plan" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="2370" y="560" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-33" value="&lt;div&gt;&lt;div&gt;You are a Python security engineer focused on explainable patching.&lt;/div&gt;&lt;div&gt;Do NOT detect vulnerabilities assume the CWE IDs are correct.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Your task: create a step-by-step PATCH PLAN to fix the vulnerabilities.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Follow XAI best practices:&lt;/div&gt;&lt;div&gt;- Evidence must reference actual code lines.&lt;/div&gt;&lt;div&gt;- Each step should be concise (3–6 steps).&lt;/div&gt;&lt;div&gt;- Include expected behavior impact and minimal edits principle.&lt;/div&gt;&lt;div&gt;- Provide confidence (High/Medium/Low) and limitation notes for each evidence.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Output format exactly:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;# Patch Plan&lt;/div&gt;&lt;div&gt;For each CWE in {cwe_ids}:&lt;/div&gt;&lt;div&gt;- Evidence lines: &amp;lt;start–end&amp;gt;&lt;/div&gt;&lt;div&gt;- Vulnerable pattern: &amp;lt;short&amp;gt;&lt;/div&gt;&lt;div&gt;- Planned fix description: &amp;lt;short&amp;gt;&lt;/div&gt;&lt;div&gt;- Expected behavior impact: &amp;lt;short&amp;gt;&lt;/div&gt;&lt;div&gt;- Confidence / Limitation: &amp;lt;High/Medium/Low, 1-line note&amp;gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="2600" y="240" width="330" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-34" value="&lt;div&gt;&lt;div&gt;&lt;div&gt;You are a Python security engineer implementing a PATCH PLAN with explainability.&lt;/div&gt;&lt;div&gt;Do NOT detect vulnerabilities assume the CWE IDs are correct.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Rules / XAI best practices:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. Traceability / Faithfulness: Each patch line must directly reference the plan’s Evidence lines and patterns.&lt;/div&gt;&lt;div&gt;2. Minimal edits / Behavior preservation: Make the smallest necessary changes; explicitly note if any original behavior is modified.&lt;/div&gt;&lt;div&gt;3. Explanation of Changes:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- Show old vs new snippet (1–3 lines each)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- CWE addressed&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- Step-by-step reasoning why the change mitigates the vulnerability&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- Include a short local-fidelity / counterfactual check: &quot;If this line were changed as proposed, would the vulnerability be removed? Yes/No + 1 sentence explanation&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- Include a concise anchor-style rule if relevant (pattern → risk)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- Expected behavior impact&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- Confidence / limitations (High/Medium/Low + 1-line note)&lt;/div&gt;&lt;div&gt;4. Engineering evaluation:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- Expected Bandit effect: Drop / NoChange / Unknown&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- Expected unit-test/runtime impact: Preserved / MayChange / Unknown&lt;/div&gt;&lt;div&gt;5. Output discipline: Only produce the exact format below, no extra text or commentary&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Output format exactly:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;#Patched Code&lt;/div&gt;&lt;div&gt;```python&lt;/div&gt;&lt;div&gt;&amp;lt;patched code here&amp;gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="2600" y="640" width="450" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-35" value="&lt;div&gt;&lt;div&gt;vulnerable_code: &quot;&quot;&quot;{vulnerable_code}&quot;&quot;&quot;&lt;/div&gt;&lt;div&gt;cwe_ids: {cwe_ids}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Task:&lt;/div&gt;&lt;div&gt;Stage 1: Produce a short, numbered plan to address or fix the issue. Do not implement the patch.&amp;nbsp;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="2960" y="250" width="330" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-36" value="&lt;div&gt;Patch Plan:&amp;nbsp; &quot;&quot;&quot;{patch_plan_output_from_stage1}&quot;&quot;&quot;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;vulnerable_code: &quot;&quot;&quot;{vulnerable_code}&quot;&quot;&quot;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;cwe_ids: {cwe_ids}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Task:&lt;/div&gt;&lt;div&gt;Provide the final secure fix or analysis, with a clear explanation according to the guidelines in the system prompt.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="3060" y="640" width="330" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-37" value="cwe_ids" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="3090" y="155" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-38" value="vulnerable_code" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="2960" y="155" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-39" value="cwe_ids" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="3180" y="550" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-40" value="vulnerable_code" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="3050" y="550" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-41" value="Plan" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="3180" y="460" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-42" value="&lt;div&gt;&lt;div&gt;You are a Python security expert. You will receive vulnerable Python code. Produce a minimal, correct, and safe patched Python file that fixes the vulnerability and preserves original behavior where reasonable. Output only the patched Python code bytes. no preamble, no explanation, no filenames, no backticks. If the request would enable exploitation or is disallowed, output a single-line Python comment beginning with # REFUSE: and a brief reason.&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="3440" y="240" width="330" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-43" value="&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;You are an Explainable AI reviewer and Python security engineer.&lt;/div&gt;&lt;div&gt;Do NOT detect vulnerabilities assume the CWE IDs provided are correct.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Task: Compare the original vulnerable code and the patched code produced in Stage 1, and produce a faithful, human-readable Explanation Report that follows XAI best practices.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Requirements (must be followed exactly):&lt;/div&gt;&lt;div&gt;- Faithfulness: every claim must map to concrete code lines in Original or Patched code.&lt;/div&gt;&lt;div&gt;- Completeness: cover every modification and every provided CWE.&lt;/div&gt;&lt;div&gt;- Counterfactual (local fidelity) checks for each modification, explicitly answer:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &quot;If this change were applied, would the vulnerability be removed? Yes/No + 1 sentence.&quot;&lt;/div&gt;&lt;div&gt;- Anchor-style rule: where relevant, include one concise &quot;If &amp;lt;pattern&amp;gt; then &amp;lt;risk&amp;gt;&quot; sentence per CWE.&lt;/div&gt;&lt;div&gt;- Confidence / limitations: include High/Medium/Low + a one-line limitation note per modification.&lt;/div&gt;&lt;div&gt;- Engineering outcomes: for each CWE/modification include:&lt;/div&gt;&lt;div&gt;&amp;nbsp;- Expected Bandit effect: Drop / NoChange / Unknown&lt;/div&gt;&lt;div&gt;&amp;nbsp;- Expected unit-test/runtime impact: Preserved / MayChange / Unknown&lt;/div&gt;&lt;div&gt;- Minimal edits &amp;amp; behavior preservation: note if behavior is preserved or exactly what changed.&lt;/div&gt;&lt;div&gt;- Output discipline: produce the Explanation Report in the exact format below and no extra text.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;#Explanation Report&lt;/div&gt;&lt;div&gt;For each CWE in {cwe_ids}:&lt;/div&gt;&lt;div&gt;- Evidence:&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Relevant lines in ORIGINAL: &amp;lt;start–end&amp;gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Relevant lines in PATCHED: &amp;lt;start–end&amp;gt; (if line numbers shifted, use approximate region and mention you mapped lines)&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Pattern mitigated: &amp;lt;short&amp;gt;&lt;/div&gt;&lt;div&gt;- Reasoning chain (3–6 bullets):&lt;/div&gt;&lt;div&gt;&amp;nbsp; 1. &amp;lt;bullet mapping evidence → why vulnerable&amp;gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; 2. &amp;lt;bullet mapping change → how it mitigates&amp;gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; 3. &amp;lt;counterfactual check: &quot;If applied, would vulnerability be removed? Yes/No + 1 sentence&quot;&amp;gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; 4–6. (optional additional supporting bullets)&lt;/div&gt;&lt;div&gt;- Anchor-style rule (if applicable): &quot;If &amp;lt;pattern&amp;gt; then &amp;lt;risk&amp;gt;&quot;&lt;/div&gt;&lt;div&gt;- Functional impact: &amp;lt;behavior preserved / modified — describe precise change if modified&amp;gt;&lt;/div&gt;&lt;div&gt;- Confidence / Limitation: &amp;lt;High/Medium/Low + 1-line limitation&amp;gt;&lt;/div&gt;&lt;div&gt;- Expected Bandit effect: &amp;lt;Drop/NoChange/Unknown&amp;gt;&lt;/div&gt;&lt;div&gt;- Expected unit-test/runtime impact: &amp;lt;Preserved/MayChange/Unknown&amp;gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="3440" y="400" width="450" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-44" value="&lt;div&gt;Take the following vulnerable code snippet and output patched Python-code only. If your fix requires external config or permissions, include those requirements as inline comments inside the code only. Do not output anything else.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Vulnerable Code:&lt;/div&gt;&lt;div&gt;{vulnerable_code}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Output:&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="3900" y="250" width="330" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-45" value="&lt;div&gt;&lt;div&gt;Original code: &quot;&quot;&quot; {vulnerable_code} &quot;&quot;&quot;&lt;/div&gt;&lt;div&gt;Patched code: &quot;&quot;&quot; {patched_code} &quot;&quot;&quot;&lt;/div&gt;&lt;div&gt;CWE IDs: {cwe_ids}&lt;/div&gt;&lt;div&gt;Now produce the Explanation Report in the exact format required by the system prompt.&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="3900" y="640" width="330" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-46" value="cwe_ids" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="3730" y="790" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-47" value="vulnerable_code" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="3900" y="750" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-48" value="patched_code" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="3900" y="840" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-49" value="cwe_ids" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="3900" y="930" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-50" value="vulnerable_code" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="3910" y="400" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-51" value="cwe_ids" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="2800" y="480" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nMwsGKjiQ6RRxXplC1-53" value="cwe_ids" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="1950" y="460" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,30 @@
+Here is the vulnerable code and the CWE IDs:
+
+vulnerable_code: """{vulnerable_code}"""
+cwe_ids: {cwe_ids}   # e.g., CWE-78 CWE-94
+
+Produce output in exactly the following format (nothing else):
+
+### CWE Blocks
+For each CWE in {cwe_ids}, provide:
+
+Evidence:
+- [E1] Relevant code lines: <start–end>
+- [E2] Language pattern: <e.g., use of eval / subprocess>
+- [E3] Violated principle: <e.g., lack of input validation>
+
+Explanation:
+- Step-by-step reasoning linking evidence to how the vulnerability is mitigated (3–6 short bullets).
+
+Patch:
+```python
+# Full runnable patched Python file
+<patched code here>
+
+Justification:
+1–3 sentences connecting each patch to the evidence.
+
+RULES:
+Prioritize interpretability and evidence linkage.
+Minimal edits: preserve original behavior wherever reasonable.
+If the fix would enable exploitation or violates policy, output exactly: REFUSE: <brief reason>

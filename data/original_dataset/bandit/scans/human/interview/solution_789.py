@@ -1,0 +1,6 @@
+n = input()
+x = len(n)
+n = n.replace('4', '0')
+n = n.replace('7', '1')
+tmp = 2 * (2**(x-1) - 1)
+print(tmp + int(n, 2) + 1)

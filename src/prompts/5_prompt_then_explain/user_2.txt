@@ -1,0 +1,4 @@
+Original code: """ {vulnerable_code} """
+Patched code: """ {previous_output} """
+CWE IDs: {cwe_ids}
+Now produce the Explanation Report in the exact format required by the system prompt.
