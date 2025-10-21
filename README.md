@@ -1,4 +1,4 @@
-# xai-avr
+# Prompts
 Exploration of LLM-applied Automated Vulnerability Repair (AVR) and explainability techniques
 
 # Installation
