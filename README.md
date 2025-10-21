@@ -9,42 +9,6 @@ We use Python 3.10, packages available within `requirements.txt`
 
 As we utilize a variety of different datasets in our method, and we simplify out approach to standardize and examine only the Python programming language, we must pre-process each incoming dataset into a similar schema for use within our methodology.
 
-### KAGGLE_VULNERABILITY_FIX
-This project contains untagged vulnerable and fixed code from a variety of datasets. As such, we create a utility file to parse out Python projects
-
-1. Remove "No response generated" cases.
-```bash
-python -m data.utils.kaggle.process_missing_data data/original_dataset/kaggle_vulnerability_fix/vulnerability_fix_dataset.csv --output data/original_dataset/kaggle_vulnerability_fix/vulnerability_fix_dataset_clean.csv
-```
-
-Results:
-```
-Input rows: 35000
-Output rows (clean): 32370
-Rows dropped: 2630
-Missing in vulnerable_code: 2507
-Missing in fixed_code: 2508
-Missing in both: 2385
-Missing in either: 2630
-Clean file: data\original_dataset\kaggle_vulnerability_fix\vulnerability_fix_dataset_clean.csv
-```
-
-2. Split Dataset
-```bash
-python -m data.utils.kaggle.process_vulnerability_fix data/original_dataset/kaggle_vulnerability_fix/vulnerability_fix_dataset_clean.csv --output data/processed_dataset/kaggle/vulnerability_fix.csv
-```
-Results:
-```
-Incoming rows: 32370
-Outgoing rows (total): 32370
-  java:   32246 -> data\processed_dataset\kaggle\vulnerability_fix_java.csv
-  python: 0 -> data\processed_dataset\kaggle\vulnerability_fix_python.csv
-  c:      0 -> data\processed_dataset\kaggle\vulnerability_fix_c.csv
-  js:     0 -> data\processed_dataset\kaggle\vulnerability_fix_js.csv
-  other:  124 -> data\processed_dataset\kaggle\vulnerability_fix_other.csv
-```
-
-Since this repository lacks Python snippets, we exclude from our study.
 
 ### HUGGINGFACE CYBERNATIVE CODE VULN
 
